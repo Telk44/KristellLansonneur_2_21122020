@@ -1,2 +1,62 @@
-.grey-star
-{color: grey}
+@font-face
+{
+    font-family: 'raleway';
+    src: url(font/Raleway-VariableFont_wght.ttf);
+    src:url(font/static/Raleway-Bold.ttf)
+    src:url(font/static/)
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    font-family: 'raleway', arial, verdana, sans-serif;
+    width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+}
+h1
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#logo-Reservia img
+{
+   height: 20%;
+}
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    font-size: small;
+    font-weight: bold; 
+}
+nav li
+{
+    padding-right: 30px;
+}
+
+nav a
+{
+    text-decoration: none;
+}
+nav a:hover
+{
+    color:#0065fc;
+    border-top: 2px solid #0065fc;
+    padding-top: 10px;
+}
+.inscrire
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+
+
+
+
