@@ -1,62 +1,79 @@
-@font-face
-{
-    font-family: 'raleway';
-    src: url(font/Raleway-VariableFont_wght.ttf);
-    src:url(font/static/Raleway-Bold.ttf)
-    src:url(font/static/)
-    font-weight: normal;
-    font-style: normal;
-}
 body
-{
-    font-family: 'raleway', arial, verdana, sans-serif;
+{ 
+    font-family: 'Raleway', sans-serif, arial, verdana;
     width: 900px;
     margin: auto;
     background-color: #ffffff;
 }
 h1
 {
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 800;
+}
+p
+{
+    font-size: 14px;
+    font-weight: 300;
 }
 header
 {
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    padding-top: 20px;
 }
 #logo-Reservia img
 {
-   height: 20%;
+   height: 80%;
 }
 nav ul
 {
     display: flex;
     list-style-type: none;
-    font-size: small;
-    font-weight: bold; 
-}
+    font-size: 14px;  
+    font-weight: 501;  
+}   
 nav li
 {
-    padding-right: 30px;
+    padding-right: 40px;
+    color: #0065fc; 
 }
 
 nav a
 {
     text-decoration: none;
+    color: black;   
 }
 nav a:hover
 {
     color:#0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 10px;
+    padding-top: 30px;       
 }
-.inscrire
+#search
 {
-    color: #0065fc;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;  
 }
-
-
-
-
+#search h1
+{
+    margin-bottom: 2px;
+}
+#search p
+{
+    margin-top: 2px;
+}
+#search-bar
+{
+    display: flex;
+    align-items: center;
+}
+#loupe
+{
+    padding: 12px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px solid #F2F2F2;
+    height: 15px;
+    margin: 0px;
+    width:15px;
+    background: #f2f2f2f2;
+}

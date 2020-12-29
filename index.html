@@ -4,6 +4,8 @@
 		<meta charset="utf-8" />
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap" rel="stylesheet">       
 		<title>Reservia</title>
     </head>
     
@@ -12,13 +14,13 @@
     <!--Logo et menu -->
 
     <header>        
-        <div id= "logo-Reservia">
+        <div id="logo-Reservia">
             <img src="images/logo/Reservia.svg" alt="Reservia"/>
         </div>
              <nav>
                  <ul>
-                     <li>Hébergements</li>
-                     <li>Activités</li>
+                     <li><a href="#hebergements">Hébergements</a></li>
+                     <li><a href="#activites">Activités</a></li>
                      <li>S'inscrire</li>
                  </ul>
             </nav>
@@ -29,13 +31,13 @@
     <section id="search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-            <form method="POST" action="#">
-            <p>
-                <label for="Loupe"><i class="fas fa-map-marker-alt"></i></label>
-                <input type="text" name="ville" placeholder="Marseille, France" id="Rechercher"/>
-                <label for="Rechercher">Rechercher</label>
-            </p>        
-            </form>         
+            <div id ="search-bar">          
+                <div id="loupe"><i class="fas fa-map-marker-alt"></i></div>
+                <form method="POST" action="#">
+                    <input id="nom-ville" type="texte" name="ville" required placeholder="Marseille, France" />                         
+                    <input id="rechercher" class="test" type="submit" value="rechercher"/>
+                </form>
+            </div>                  
     </section>
 
     <!--Section Filtres-->
@@ -54,7 +56,7 @@
     <!--Section Hébergements à Marseille-->
 
     <section id="bloc-hebergements">
-        <h1>Hébergements à Marseille</h1>
+        <h1 id="hebergements">Hébergements à Marseille</h1>
             <div id="presentation-hebergements">
                 <article>
                     <a href="#">
@@ -201,7 +203,7 @@
 
     <!--Section Activités à Marseille -->
     <section id="activites">
-        <h1>Activités à Marseille</h1>
+        <h1 id="activites">Activités à Marseille</h1>
         <div id="presentation-activites">
             <article id="colonne1">
             <a href="#">
