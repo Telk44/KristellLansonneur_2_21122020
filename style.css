@@ -21,7 +21,7 @@ header
     justify-content: space-between;
     padding-top: 20px;
 }
-#logo-Reservia img
+.logo-Reservia img
 {
    height: 80%;
 }
@@ -49,25 +49,26 @@ nav a:hover
     border-top: 2px solid #0065fc;
     padding-top: 30px;       
 }
-#search
+.search
 {
     display: flex;
     flex-direction: column;  
 }
-#search h1
+.search h1
 {
     margin-bottom: 2px;
 }
-#search p
+.search p
 {
     margin-top: 2px;
 }
-#search-bar
+.search-bar
 {
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
 }
-#loupe
+.loupe
 {
     padding: 12px;
     border-radius: 15px 0px 0px 15px;
@@ -77,3 +78,25 @@ nav a:hover
     width:15px;
     background: #f2f2f2f2;
 }
+form 
+{
+    width:250px;
+    height: 15px;
+    margin: 0px;
+}
+input[type=texte]
+{ 
+  border-style: none;
+  text-align: center;
+  border-top:2px solid #f2f2f2;
+  border-bottom:2px solid #f2f2f2;
+  padding-bottom: 21px;
+  }
+  input[type=submit]
+{
+    border-style: none;
+    border-radius: 0px 15px 15px 0px;
+    background-size: 30px;
+    
+}
+    
