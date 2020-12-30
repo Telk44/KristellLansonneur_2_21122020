@@ -1,7 +1,7 @@
 body
 { 
     font-family: 'Raleway', sans-serif, arial, verdana;
-    width: 900px;
+    width: 1340px;
     margin: auto;
     background-color: #ffffff;
 }
@@ -19,7 +19,9 @@ header
 {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
+    padding-top: 45px;
+    margin-left: 4px;
+    margin-right: 25px;
 }
 .logo-Reservia img
 {
@@ -47,16 +49,18 @@ nav a:hover
 {
     color:#0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 30px;       
+    padding-top: 45px;       
 }
 .search
 {
     display: flex;
     flex-direction: column;  
+    margin-left:4px;
 }
 .search h1
 {
     margin-bottom: 2px;
+   
 }
 .search p
 {
@@ -65,38 +69,38 @@ nav a:hover
 .search-bar
 {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
+    
+    justify-content: flex-start;   
 }
 .loupe
 {
-    padding: 12px;
+    padding: 15px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px solid #F2F2F2;
-    height: 15px;
-    margin: 0px;
-    width:15px;
+    border: 1px solid #F2F2F2; 
     background: #f2f2f2f2;
 }
-form 
-{
-    width:250px;
-    height: 15px;
-    margin: 0px;
-}
+
 input[type=texte]
 { 
   border-style: none;
-  text-align: center;
   border-top:2px solid #f2f2f2;
   border-bottom:2px solid #f2f2f2;
-  padding-bottom: 21px;
-  }
+  height: 45px;
+  color: black;  
+}
   input[type=submit]
 {
     border-style: none;
+    background-color:#0065fc ;
     border-radius: 0px 15px 15px 0px;
-    background-size: 30px;
+    height: 50px;
+    color: white;
+    
+    
+   
+    
+    
+    
     
 }
     
