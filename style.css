@@ -95,6 +95,7 @@ form
 input[type=texte]
 {
     border-style: none;  
+    text-decoration: none;
 }
 
 input[type=submit]
@@ -117,7 +118,6 @@ input[type=submit]
     font-weight: bold
     
 }
-
 .filtres ul
 {
     display: flex;
@@ -131,11 +131,8 @@ input[type=submit]
     align-items: center;
     margin-right: 40px;
     border: 1.5px solid #f2f2f2;
-    border-radius: 20px 20px 20px 20px;    
-       
+    border-radius: 20px 20px 20px 20px;           
 }
-
-
 .money,.child,.heart,.dog
 {
     display: flex;
@@ -146,6 +143,10 @@ input[type=submit]
     border-radius: 20px;
     background: #deebff;      
 }
+li:hover
+{
+background-color: #deebff;
+}
 /* Section Hébergements*/
 
 .all-hebergements
@@ -154,12 +155,15 @@ input[type=submit]
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    padding-left: 10px;
    }
 /* Section Hébergements à Marseille*/
+
 .bloc-hebergements
 {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     border-radius: 20px;   
     background-color:#f2f2f2 ;
     width: 60% ;
@@ -171,21 +175,27 @@ input[type=submit]
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+ }
 .vignette-hebergement
 {
     width: 246px;
     height: auto;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 40px;    
+    padding-bottom: 20px;
+    box-shadow: 2px 2px 3px 1px rgba(29, 29, 29, 0.027);
+    
 }
 .vignette
 {
     width: 236px;
     height: 114px;
     object-fit: cover;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    padding-left: 5px;
+    padding-top: 5px;    
 }
 .populaires
 {
@@ -193,8 +203,22 @@ input[type=submit]
     background-color:#f2f2f2 ;
     width: 30% ;
 }
-
-
-
-
+.stars
+{
+    color: #0065fc;
+    padding-left: 5px;
+}
+.grey-star
+{
+    color:#F2F2F2
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+.vignette-hebergement h3,p
+{
+    padding-left: 5px;
+}
 
