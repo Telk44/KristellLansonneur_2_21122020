@@ -7,12 +7,12 @@ body
 }
 h1
 {
-    font-size: 19px;
+    font-size: 24px;
     font-weight: bold;
 }
 h3
 {
-    font-size: 16px;
+    font-size: 19px;
 }
 p
 {
@@ -292,6 +292,7 @@ a
     padding-left: 5px;
 }
 /* Section Activités à Marseille */
+
 .activites-marseille
 {
     display: flex;
@@ -322,11 +323,11 @@ a
 }
 .fort-pomegues img
 {
-        width: 302px;
-        height: 180px;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+    width: 302px;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .iles-frioul img
 {
@@ -351,4 +352,35 @@ a
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.colonne1, .colonne3, .fort-pomegues,.iles-frioul,.notre-dame,.parc-longchamp
+{
+    width: 302px;
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);
+}
+.presentation-activites h3
+{
+    padding-left: 20px;
+}
+ .colonne2,.colonne4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+/* Footer */ 
+
+footer
+{
+    display: flex;
+    justify-content:space-around;
+    background: #F2F2F2;
+}
+
+footer ul
+{
+   list-style-type: none;
+   padding-left: 0px;
 }
