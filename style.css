@@ -1,10 +1,17 @@
-body
+*
+{
+ padding: 0;
+ margin: 0;
+ font-family: 'Raleway', sans-serif, arial, verdana;
+ max-width: 1440px;
+}
+/* body
 { 
     font-family: 'Raleway', sans-serif, arial, verdana;
     max-width:1340px;
-    margin: auto;
+    font-weight: 400;   
     background-color: #ffffff;
-}
+} */
 h1
 {
     font-size: 24px;
@@ -12,7 +19,7 @@ h1
 }
 h3
 {
-    font-size: 19px;
+    font-size: 18px;
 }
 p
 {
@@ -30,6 +37,8 @@ header
     padding-top: 50px;
     margin:0 30px 50px 15px;
 }
+
+
 /* .logo-Reservia img
 {
    height: 80%;
@@ -39,12 +48,13 @@ nav
     display:flex;     
     /* justify-content: space-between; */
     align-items: center;
-    /* width: 30%; */
+    width: 30%;
 }
 nav ul
 {
     display: flex;
-    list-style-type: none;    
+    list-style-type: none;  
+    justify-content: space-around;  
      /* padding-top: 5px;   */
 }   
 nav li
@@ -112,7 +122,7 @@ form
     border-right:1px solid #f2f2f2 ;
     border-radius: 0px 15px 15px 0px;  
 }
-input[type=texte]
+input[type=text]
 {
     border-style: none;  
     padding-left: 18px;
@@ -310,8 +320,9 @@ a
     flex-direction: column;  
     max-width: 340px;  
     border-radius: 20px; 
-    padding: 40px;  
-    background-color:#f2f2f2 ;  
+    background-color:#f2f2f2 ; 
+    padding: 40px;
+    justify-content: space-between;
 }
 .hebergements-populaires
 {
@@ -341,6 +352,7 @@ a
     background-color: white;
     border-radius: 20px;   
     box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);
+    margin-top: 30px;
 }
 .vignette-populaire img
 {
@@ -497,25 +509,36 @@ footer li
     header
     {
         position: relative;
+        padding:30px 0px 100px 0px;
+        margin: 0;
     }
 
     nav
     {
         flex-wrap: wrap-reverse;
+        justify-content: flex-end;
     }
     nav ul
     {
+        display:flex;
+        width:100%;
         position: absolute;
-        top: 100px;
-        left:40px;
-        
+        top:100px;
+        border-bottom: 2px solid #f2f2f2 ;
+        padding-bottom: 18px;
+
     }
-   
+    
+       nav li a:hover
+       {
+           border-top:0;
+           border-bottom: 2px solid #0065fc;
+           padding-bottom: 18px;
+       }
+      
   /* Section Logo et menu*/
 
-   
-
-    input[type=submit]
+      input[type=submit]
     {
         display: none;
     }
@@ -532,23 +555,25 @@ footer li
     }
 
     /* Section Hébergements*/
-     .all-hebergements
-        {
-            flex-wrap: wrap-reverse;
-            justify-content: space-between;
-        }
+    .all-hebergements
+    {
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+    }
        
     .bloc-hebergements
     {
         background: none;  
-        /* margin: 0;
-        padding-right: 0;
-        padding-left: 0; */
     }    
     .populaires
     {
       border-radius: 0rem;
+      padding-left: 0px;
+      padding-bottom: 0px;
     }
+    footer
+     {justify-content:space-between;
 
+    }
 
 }
