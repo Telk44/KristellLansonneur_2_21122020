@@ -2,17 +2,28 @@
 {
  padding: 0;
  margin: 0;
- font-family: 'Raleway', sans-serif, arial, verdana;
- max-width: 1440px;
 }
-/* body
+body
 { 
     font-family: 'Raleway', sans-serif, arial, verdana;
-    max-width:1340px;
-    font-weight: 400;   
+    max-width:1440px;
+    /* font-weight: 400;   */ 
     background-color: #ffffff;
-} */
-h1
+    margin: auto;
+    padding: 0;
+}
+#container
+{
+    max-width: 1340px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1{
+    font-size: 1em;
+}
+/* h2
 {
     font-size: 24px;
     font-weight: bold;
@@ -25,19 +36,19 @@ p
 {
     font-size: 14px;
     font-weight: 300;
-}
+} */
 
 /* Section Logo et menu*/
+
 
 header
 {
     display: flex;
-    justify-content: space-between;  
-    width: 100%;
+    justify-content: space-between; 
     padding-top: 50px;
-    margin:0 30px 50px 15px;
+    margin: 0px 45px 50px 5px;
+    
 }
-
 
 /* .logo-Reservia img
 {
@@ -46,9 +57,9 @@ header
 nav
 {
     display:flex;     
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    width: 30%;
+    /* width: 30%; */
 }
 nav ul
 {
@@ -95,18 +106,22 @@ nav li a:hover
     justify-content: space-around; 
     margin-left:15px;    
 }
-.search h1
+.search h2
 {
    padding: 0;
-   margin: 0px;
+   margin-bottom: 15px;
 }
 .search p
-{    
-    font-size: 16px;
+{  
+    padding:0px;
+    margin-bottom:24px;  
+    /* font-size: 16px; */
 }
 .search-bar
 {
-    display: flex;  
+    display: flex; 
+    margin-bottom: 30px;; 
+    
 }
 .loupe
 {
@@ -166,6 +181,7 @@ button[type=submit]
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 30px;
 }
 .filtres li
 {
@@ -216,12 +232,10 @@ background-color: #deebff;
 .infos
 {
     display: flex;
-    align-items: center;   
+    align-items: center;  
+    margin-bottom: 32px;   
 }
-.infos p
-{
-    font-size: 16px;    
-}
+
 
 /* Section Hébergements*/
 
@@ -241,34 +255,37 @@ background-color: #deebff;
     border-radius: 20px;   
     background-color:#f2f2f2 ;
     max-width: 800px;
-    padding-left: 40px;
-    padding-right: 40px;
-    /* margin-right: 2.5em; */
+    padding: 0 40px;
+    
 }
 .container-vignette
 {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
  } 
 .vignette-hebergement
 {
-    width: 246px;
+    max-width: 246px;
+    max-height: 190px;
     background-color: white;
     border-radius: 20px;
-    margin-bottom: 30px;    
-    padding-bottom: 10px;
+    margin-bottom: 30px;  
+    margin:0 20 30 0;
+   /*  padding-bottom: 10px; */
+    padding: 5px;
     box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);    
 }
 .vignette-hebergement img
 {
-    width: 236px;
-    height: 114px;
+    width: 100%;
+    height: 60%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px; 
-    padding-left: 5px;
-    padding-top: 5px;    
+    /* padding: 5px; */
+    /* padding-top: 5px;    */ 
 }
 .stars
 {
@@ -284,10 +301,10 @@ a
     text-decoration: none;
     color: black;
 }
-.vignette-hebergement h3,p,.stars
+/* .vignette-hebergement h3,p,.stars
 {
     padding-left: 15px;
-}
+} */
 .prix
 {
     font-weight: bold ;
@@ -318,11 +335,11 @@ a
 {
     display:flex;
     flex-direction: column;  
+    justify-content: space-around;
     max-width: 340px;  
     border-radius: 20px; 
-    background-color:#f2f2f2 ; 
-    padding: 40px;
-    justify-content: space-between;
+    padding: 40px;  
+    background-color:#f2f2f2 ;  
 }
 .hebergements-populaires
 {
@@ -337,7 +354,7 @@ a
     justify-content: space-between;
     align-items: center;    
 }
-.titre-populaire h1
+.titre-populaire h2
 {
     margin: 0px;
 }
@@ -350,9 +367,9 @@ a
 {
     width: 345px;
     background-color: white;
-    border-radius: 20px;   
+    border-radius: 20px; 
+    margin-top: 30px;  
     box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);
-    margin-top: 30px;
 }
 .vignette-populaire img
 {
@@ -494,16 +511,8 @@ footer li
     {
         max-width: 100%;
     }
-
-
-
-
 /* Footer*/
-
-
 }
-
-
 @media all and (max-width:320px){
 
     header
@@ -538,7 +547,16 @@ footer li
       
   /* Section Logo et menu*/
 
-      input[type=submit]
+  input[type=text]
+  {
+      border-style: none;  
+      padding-left: 0;
+      
+      font-weight:bold ;
+      font-size:18px ;
+  }
+
+    input[type=submit]
     {
         display: none;
     }
@@ -568,12 +586,16 @@ footer li
     .populaires
     {
       border-radius: 0rem;
-      padding-left: 0px;
-      padding-bottom: 0px;
+      padding: 0;
     }
+    
+    .colonne1, .colonne3, .fort-pomegues, .iles-frioul, .notre-dame, .parc-longchamp
+{
+    margin-top: 22px;
+}
+
     footer
-     {justify-content:space-between;
-
-    }
-
+{
+    justify-content: space-between;
+}
 }
