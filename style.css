@@ -95,6 +95,7 @@ nav li a:hover
     color: #0065fc;
     font-weight: bold; 
     margin-left: 24px;
+    margin-right: ;
 }
 
 /* Section Search*/
@@ -183,11 +184,17 @@ button[type=submit]
     align-items: center;
     margin-bottom: 30px;
 }
+.barre-filtres h3
+{
+    padding-bottom: 13px;
+}
+
 .filtres li
 {
     display: flex;
     align-items: center;
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-bottom: 12px;
 }
 .filtres li p
 {
@@ -211,7 +218,7 @@ button[type=submit]
 .barre-filtres p
 {
     font-weight: bold;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 .filtres li :hover
 {
@@ -243,6 +250,7 @@ background-color: #deebff;
 {
     display: flex; 
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 /* Section Hébergements à Marseille*/
@@ -256,6 +264,8 @@ background-color: #deebff;
     background-color:#f2f2f2 ;
     max-width: 800px;
     padding: 0 40px;
+    margin-top: 5px;
+    
     
 }
 .container-vignette
@@ -290,7 +300,7 @@ background-color: #deebff;
 .stars
 {
     color: #0065fc;
-    padding-left: 5px;
+    /* padding-left: 5px; */
 }
 .grey-star
 {
@@ -301,10 +311,10 @@ a
     text-decoration: none;
     color: black;
 }
-/* .vignette-hebergement h3,p,.stars
+.vignette-hebergement h3,p,.stars
 {
     padding-left: 15px;
-} */
+}
 .prix
 {
     font-weight: bold ;
@@ -326,8 +336,10 @@ a
    }
 .container-vignette p
 {
-    margin-top: 0px;    
+    margin-top: 0px;  
+     
 }
+
 
 /* Section Les plus populaires */
 
@@ -340,6 +352,7 @@ a
     border-radius: 20px; 
     padding: 40px;  
     background-color:#f2f2f2 ;  
+    margin-top: 5px;
 }
 .hebergements-populaires
 {
@@ -365,7 +378,7 @@ a
 }
 .vignette-populaire
 {
-    width: 345px;
+    max-width: 345px;
     background-color: white;
     border-radius: 20px; 
     margin-top: 30px;  
@@ -402,6 +415,10 @@ a
     display: flex;
     flex-direction: column;
     padding: 20px 10px 30px 15px;
+}
+.activites-marseille h2
+{
+    padding-bottom: 15px;
 }
 .presentation-activites
 {
@@ -451,7 +468,7 @@ a
 }
 .parc-longchamp img
 {
-    width: 302px;
+    width: 100%;
     height: 152px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -459,7 +476,7 @@ a
 }
 .colonne1, .colonne3, .fort-pomegues,.iles-frioul,.notre-dame,.parc-longchamp
 {
-    width: 302px;
+    max-width: 302px;
     border-radius: 20px;
     background-color:white;
     box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);
@@ -467,6 +484,7 @@ a
 .presentation-activites h3
 {
     padding-left: 20px;
+    padding-bottom: 10px;
 }
  .colonne2,.colonne4
 {
@@ -474,8 +492,7 @@ a
     flex-direction: column;
     justify-content: space-between;   
 }
-/* Footer */ 
-
+/* Footer */
 footer
 {
     display: flex;
@@ -511,17 +528,21 @@ footer li
     {
         max-width: 100%;
     }
-/* Footer*/
 }
-@media all and (max-width:320px){
-
+@media all and (max-width:425px){
+    /* Header*/
     header
     {
         position: relative;
-        padding:30px 0px 100px 0px;
+        padding:30px 10px 100px 0px;
         margin: 0;
     }
-
+    .logo-Reservia
+    {
+        padding-left: 10px;
+        
+    }
+  
     nav
     {
         flex-wrap: wrap-reverse;
@@ -544,17 +565,16 @@ footer li
            border-bottom: 2px solid #0065fc;
            padding-bottom: 18px;
        }
-      
-  /* Section Logo et menu*/
+    /* Section Logo et menu*/
 
-  input[type=text]
-  {
-      border-style: none;  
-      padding-left: 0;
-      
-      font-weight:bold ;
-      font-size:18px ;
-  }
+    input[type=text]
+    {
+        border-style: none;  
+        padding-left: 0;
+        
+        font-weight:bold ;
+        font-size:18px ;
+    }
 
     input[type=submit]
     {
@@ -571,6 +591,20 @@ footer li
         font-size: 18px;
         padding: 0 15px 0 15px;
     }
+        
+    .barre-filtres h3 
+    {
+        margin-left: 15px;
+    }
+    .filtres li
+    {
+        margin-left: 8px;
+    }
+}
+@media all and (max-width:375px){
+
+    
+  
 
     /* Section Hébergements*/
     .all-hebergements
@@ -581,21 +615,68 @@ footer li
        
     .bloc-hebergements
     {
-        background: none;  
-    }    
+        background: none; 
+        padding: 0 20px; 
+    }  
+    .vignette-hebergement
+{
+    max-width: 336px;
+    max-height: 200px;
+    margin-bottom: 10px;
+} 
+    .titre-populaire h2 
+    {
+        margin-bottom: 15px;
+    }
+
     .populaires
     {
       border-radius: 0rem;
       padding: 0;
+      padding: 40px 20px;
     }
-    
+    .vignette-populaire
+    {
+        margin-top: 10px;
+    }
+
+    /* Section ACTIVITES*/
+
     .colonne1, .colonne3, .fort-pomegues, .iles-frioul, .notre-dame, .parc-longchamp
 {
     margin-top: 22px;
 }
 
+.colonne1, .colonne3, .fort-pomegues,.iles-frioul,.notre-dame,.parc-longchamp
+{
+    max-width: 334px;
+}
+
+    .activites-marseille img 
+    {
+        width: 334px;
+        height: 190px;
+        object-fit: cover;
+        
+    }
+    .activites-marseille
+{
+    
+    padding: 20px 0 30px 0;
+}
+    /* Footer*/
     footer
 {
     justify-content: space-between;
 }
 }
+@media all and (max-width:320px){
+
+    .bloc-hebergements
+    {
+        padding: 0 5px; 
+    }  
+    .populaires
+    {
+        padding: 40px 5px;
+    }
