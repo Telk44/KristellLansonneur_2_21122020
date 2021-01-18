@@ -7,7 +7,6 @@ body
 { 
     font-family: 'Raleway', sans-serif, arial, verdana;
     max-width:1440px;
-    /* font-weight: 400;   */ 
     background-color: #ffffff;
     margin: auto;
     padding: 0;
@@ -19,54 +18,30 @@ body
     flex-direction: column;
     margin: auto;
 }
-
 h1{
     font-size: 1em;
 }
-/* h2
-{
-    font-size: 24px;
-    font-weight: bold;
-}
-h3
-{
-    font-size: 18px;
-}
-p
-{
-    font-size: 14px;
-    font-weight: 300;
-} */
 
 /* Section Logo et menu*/
-
 
 header
 {
     display: flex;
     justify-content: space-between; 
     padding-top: 50px;
-    margin: 0px 45px 50px 5px;
-    
+    margin: 0px 45px 50px 5px;    
 }
-
-/* .logo-Reservia img
-{
-   height: 80%;
-} */
 nav
 {
     display:flex;     
     justify-content: space-between;
     align-items: center;
-    /* width: 30%; */
 }
 nav ul
 {
     display: flex;
     list-style-type: none;  
     justify-content: space-around;  
-     /* padding-top: 5px;   */
 }   
 nav li
 {
@@ -87,8 +62,7 @@ nav li a:hover
 {
     color:#0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 50px; 
-    
+    padding-top: 50px;     
 }
 .inscription
 {
@@ -115,13 +89,11 @@ nav li a:hover
 {  
     padding:0px;
     margin-bottom:24px;  
-    /* font-size: 16px; */
 }
 .search-bar
 {
     display: flex; 
-    margin-bottom: 30px;; 
-    
+    margin-bottom: 30px;    
 }
 .loupe
 {
@@ -140,10 +112,9 @@ form
 input[type=text]
 {
     border-style: none;  
-    padding-left: 18px;
-    /* padding-right:60px ; */
-    font-weight:bold ;
-    font-size:18px ;
+    text-align: center;
+    font-weight:bold;
+    font-size:16px ;
 }
 input[type=submit]
 {
@@ -242,7 +213,6 @@ background-color: #deebff;
     margin-bottom: 32px;   
 }
 
-
 /* Section Hébergements*/
 
 .all-hebergements
@@ -260,12 +230,10 @@ background-color: #deebff;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 20px;   
-    background-color:#f2f2f2 ;
+    background-color:#f2f2f2;
     max-width: 800px;
     padding: 0 40px;
-    margin-top: 5px;
-    
-    
+    margin-top: 5px; 
 }
 .container-vignette
 {
@@ -281,8 +249,6 @@ background-color: #deebff;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 30px;  
-    margin:0px 20px 30px 0px;
-   /*  padding-bottom: 10px; */
     padding: 5px;
     box-shadow: 0px 0px 15px 8px rgba(19, 18, 18, 0.027);    
 }
@@ -335,10 +301,8 @@ a
    }
 .container-vignette p
 {
-    margin-top: 0px;  
-     
+    margin-top: 0px;      
 }
-
 
 /* Section Les plus populaires */
 
@@ -358,8 +322,7 @@ a
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-     
+}     
 .titre-populaire
 {
     display:flex ;
@@ -370,7 +333,6 @@ a
 {
     margin: 0px;
 }
-
 .inside-vignette
 {
     display: flex;
@@ -467,7 +429,7 @@ a
 }
 .parc-longchamp img
 {
-    width: 100%;
+    width: 302px;
     height: 152px;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -491,7 +453,9 @@ a
     flex-direction: column;
     justify-content: space-between;   
 }
+
 /* Footer */
+
 footer
 {
     display: flex;
@@ -506,7 +470,7 @@ footer ul
 }
 footer h3
 {
-    padding-top: 20px;
+    padding: 20px 0;
 }
 footer li
 {
@@ -516,6 +480,7 @@ footer li
 {
     margin-left: 50px;
 }
+
 /* RESPONSIVE*/
 
 @media all and (max-width:1000px){
@@ -528,7 +493,7 @@ footer li
         max-width: 100%;
     }
 }
-@media all and (max-width:425px){
+@media all and (max-width:630px){
     /* Header*/
     header
     {
@@ -538,10 +503,8 @@ footer li
     }
     .logo-Reservia
     {
-        padding-left: 10px;
-        
+        padding-left: 10px;        
     }
-  
     nav
     {
         flex-wrap: wrap-reverse;
@@ -555,26 +518,30 @@ footer li
         top:100px;
         border-bottom: 2px solid #f2f2f2 ;
         padding-bottom: 18px;
-
     }
-    
-       nav li a:hover
-       {
-           border-top:0;
-           border-bottom: 2px solid #0065fc;
-           padding-bottom: 18px;
-       }
-    /* Section Logo et menu*/
-
-    input[type=text]
+    nav li
     {
-        border-style: none;  
-        padding-left: 0;
-        
-        font-weight:bold ;
-        font-size:18px ;
+        color: #0065fc; 
+        font-weight: bold; 
+        margin-left: 0px;  
+    }
+    nav li a:hover
+    {
+        border-top: 0px;
+        color:#0065fc;
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 18px;     
     }
 
+    
+ /* Section Search*/
+
+    .search
+    {
+        margin-left: 20px;
+    } 
+/* Section Logo et menu*/
+  
     input[type=submit]
     {
         display: none;
@@ -599,30 +566,25 @@ footer li
     {
         margin-left: 8px;
     }
-}
-@media all and (max-width:375px){
 
-    
-  
-
-    /* Section Hébergements*/
+/* Section Hébergements*/
     .all-hebergements
     {
         flex-wrap: wrap-reverse;
         justify-content: space-between;
     }
-       
+    
     .bloc-hebergements
     {
         background: none; 
         padding: 0 20px; 
     }  
     .vignette-hebergement
-{
-    max-width: 336px;
-    max-height: 200px;
-    margin-bottom: 10px;
-} 
+    {
+        max-width: 336px;
+        max-height: 200px;
+        margin-bottom: 10px;
+    } 
     .titre-populaire h2 
     {
         margin-bottom: 15px;
@@ -630,45 +592,49 @@ footer li
 
     .populaires
     {
-      border-radius: 0rem;
-      padding: 0;
-      padding: 40px 20px;
+        border-radius: 0rem;
+        padding: 0;
+        padding: 40px 20px;
     }
     .vignette-populaire
     {
         margin-top: 10px;
     }
+    @media all and (max-width:375px){
 
-    /* Section ACTIVITES*/
+ /* Section ACTIVITES*/
 
     .colonne1, .colonne3, .fort-pomegues, .iles-frioul, .notre-dame, .parc-longchamp
-{
-    margin-top: 22px;
-}
-
-.colonne1, .colonne3, .fort-pomegues,.iles-frioul,.notre-dame,.parc-longchamp
-{
-    max-width: 334px;
-}
-
-    .activites-marseille img 
     {
-        width: 334px;
-        height: 190px;
-        object-fit: cover;
-        
+        margin-top: 22px;
+        max-width: 334px;
+        max-height:190px ;
+    }
+    .activites-marseille h2
+    {
+        padding-bottom: 5px;
+    }
+       .activites-marseille img 
+    {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;        
     }
     .activites-marseille
-{
-    
-    padding: 20px 0 30px 0;
-}
-    /* Footer*/
+    {
+        margin-left: 5px;
+    }
+ /* Footer*/
+
     footer
-{
-    justify-content: space-between;
+    {
+        justify-content: space-between;
+    }
 }
-}
+@media all and (max-width:326px){
+
+
+
 @media all and (max-width:320px){
 
     .bloc-hebergements
@@ -678,5 +644,9 @@ footer li
     .populaires
     {
         padding: 40px 5px;
+    }
+    .activites-marseille
+    {
+         margin: 0px;
     }
 }
