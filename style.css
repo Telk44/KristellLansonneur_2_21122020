@@ -618,7 +618,7 @@ footer li
         {
             border-top: 0px;        
         }
-    
+         /* Section Activites*/
 
         .activites-marseille
         {
@@ -661,11 +661,7 @@ footer li
         {
             margin-left: 5px;
         }
-        .presentation-activites h3 
-        {        
-            padding-top: 24px;
-        }
-        /* Footer*/
+               /* Footer*/
 
         footer
         {
