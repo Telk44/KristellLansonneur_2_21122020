@@ -18,7 +18,7 @@ h1
     font-size: 1em;
 }
 
-/* Logo et menu*/
+/* Header*/
 
 header
 {
@@ -278,7 +278,6 @@ a
 {
     padding-left: 15px;
 }
-
 .prix
 {
     font-weight: bold ;
@@ -504,13 +503,12 @@ footer li
             margin-left: 0px;            
         }
     }
-    @media all and (max-width:630px){  
+   
         /* Section Search*/
         .search
         {
             margin-left: 20px;
         } 
-        /* Section Logo et menu*/  
         input[type=submit]
         {
             display: none;
@@ -541,6 +539,7 @@ footer li
             flex-wrap: wrap-reverse;
             justify-content: space-between;
         } 
+        
         /* Section Hébergements à Marseille*/  
 
         .bloc-hebergements
@@ -572,7 +571,7 @@ footer li
             margin-top: 10px;
         }
     }
-
+/* 
     @media all and (max-width:425px){
         /* Header*/
 
@@ -626,7 +625,7 @@ footer li
         }
     }
 
-
+ */
     @media all and (max-width:375px){
         /* Header*/
 
