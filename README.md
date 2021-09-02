@@ -1,7 +1,7 @@
 Transformez une maquette en site web!
 
 A partir des maquettes desktop et mobiles du site Reservia, ma mission consiste à intégrer la maquette responsive en HTML et CSS. Le site devra également être adapté aux tablettes.
-Fontionnalités:
+Fonctionnalités:
   - Le champ de recherche est un champ de saisie, dont le texte peut être édité par l’usager. Par contre, à ce stade, le bouton de recherche ne sera pas fonctionnel.
   - Chaque carte d’hébergement ou d’activité doit être cliquable dans son intégralité. Mais les liens seront vides pour le moment.
   - Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol.
