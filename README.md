@@ -14,4 +14,4 @@ __Fonctionnalités:__
 * Mon code doit être versionné avec Git et il est recommandé d’utiliser GitKraken comme client Git.
 * La page doit être déployée sur GitHub Pages ou GitLab Pages.
 
-__Lien vers la page web :__  https://telk44.github.io/KristellLansonneur_2_21122020/
+__Lien vers la page web :__  https://telk44.github.io/Reservia/
