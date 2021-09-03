@@ -1,4 +1,4 @@
-# Transformez une maquette en site web
+# Projet 2 du parcours Développeur web d'Openclassrooms: Transformez une maquette en site web
 
 A partir des maquettes desktop et mobiles du site Reservia, ma mission consiste à intégrer la maquette responsive en HTML et CSS. Le site devra également être adapté aux tablettes. 
 
